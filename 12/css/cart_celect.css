@@ -1,0 +1,112 @@
+.flitr_hover{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selector {
+  height: 50px;
+  width: 210px;
+  position: relative;
+  display: block;
+  text-align: left;
+  margin-bottom: 2.4em;
+  background: #0069b4;
+  padding: 7px 0px 0px 20px;
+  margin-right: 20px;
+}
+.title_selector{
+   color: #fff;
+   font-size: 12px;
+}
+.selector__toggle {
+  display: block;
+
+  color: white;
+  text-decoration: none;
+ -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.selector__toggle i {
+  float: right;
+  position: relative;
+  top: 0.2em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.selector__toggle:hover{
+  color: #fff;
+}
+.open .selector__toggle i {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/*.selector__toggle:hover, .selector__toggle:focus {
+  
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+*/
+.selector__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #0069b4;
+  border-right: 1px solid #0069b4;
+  border-left: 1px solid  #0069b4;
+}
+.open .selector__list {
+  display: block;
+}
+.selector__list li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+/*  border-top: 1px solid #8eaeeb;
+  background-color: #4a5f87;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.axad {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon/next.svg);
+    background-size: 13px 13px;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 2.5px);
+    pointer-events: none;
+    z-index: 3;
+    top: 7px;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.selector__list li a{
+   border: none;
+}
+.selector__list li a{
+   color: #000;
+}
